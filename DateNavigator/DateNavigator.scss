@@ -1,0 +1,119 @@
+@import '../style/variables.scss';
+
+.dateNavigatorComponent {
+  display: flex;
+  align-items: flex-start;
+  height: 5em;
+
+  .navigatorArrowsContainer {
+    position: relative;
+    width: 3em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5em;
+    background-color: transparent;
+    border: none;
+
+    &:disabled {
+      .navigatorArrow {
+        cursor: default;
+      }
+
+      .navigatorArrowsLeft {
+        border-left: 1px solid $colour-grey;
+        border-bottom: 1px solid $colour-grey;
+      }
+      .navigatorArrowsRight {
+        border-right: 1px solid $colour-grey;
+        border-top: 1px solid $colour-grey;
+      }
+    }
+
+    .navigatorArrow {
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      transform: rotate(45deg);
+      cursor: pointer;
+    }
+
+    .navigatorArrowsLeft {
+      border-left: 1px solid $colour-mid-blue;
+      border-bottom: 1px solid $colour-mid-blue;
+      &:nth-child(1) {
+        left: 1em;
+      }
+      &:nth-child(2) {
+        left: 1.5em;
+      }
+    }
+
+    .navigatorArrowsRight {
+      border-right: 1px solid $colour-mid-blue;
+      border-top: 1px solid $colour-mid-blue;
+      &:nth-child(1) {
+        right: 1.5em;
+      }
+      &:nth-child(2) {
+        right: 1em;
+      }
+    }
+  }
+
+  .mid {
+    margin-top: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    font-size: 0.9em;
+
+    :global(.daysSelector) {
+      margin: 0 !important;
+    }
+
+    .dateHeader {
+      flex-grow: 1;
+      height: 2.5em;
+      background-color: $colour-mid-blue;
+      border: none;
+      color: $colour-white;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 3px;
+      padding: 0 8.6em;
+      cursor: pointer;
+      z-index: 3;
+    }
+    .daysSelector {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.3em 0;
+    }
+    .dateNavigatorSlideDownContainer {
+      height: auto;
+      position: absolute;
+      overflow: hidden;
+      padding-top: 2em;
+      border-radius: 3px;
+      left: 0;
+      right: 0;
+      font-weight: 600;
+      background-color: $colour-white;
+      transition: max-height 0.5s, min-height 0.5s;
+      z-index: 2;
+
+      &.open {
+        max-height: 25em;
+        min-height: 15em;
+        box-shadow: 1px 1px 8px -2px #000;
+      }
+
+      &.closed {
+        max-height: 0;
+        min-height: 0;
+      }
+    }
+  }
+}

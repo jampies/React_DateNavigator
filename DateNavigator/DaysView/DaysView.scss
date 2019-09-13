@@ -1,0 +1,93 @@
+@import '../../style/variables.scss';
+
+.daysCalendar {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+
+  .headings {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0.5em 0;
+  }
+
+  .daysHeaders {
+    display: flex;
+    justify-content: space-around;
+
+    .dayHeader {
+      font-weight: 600;
+      margin: 0.5em;
+      width: 2em;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .days {
+    &.weekSelect {
+      .weekRow:hover {
+        background-color: $colour-grey;
+      }
+
+      .weekRow {
+        .day {
+          &:hover {
+            background-color: $colour-light-grey;          
+          }
+
+          &.selected {
+            background-color: $colour-light-grey;
+            color: $colour-black;
+          }
+        }
+      }
+
+    }
+
+    .weekRow {
+      display: flex;
+      justify-content: space-around;
+      border-radius: 3px;
+      margin: 0.3em;
+
+      &.selected {
+        background-color: $colour-light-grey;
+
+        .day:not(.selected) {
+          &:hover {
+            background-color: $colour-white;          
+          }
+        }
+      }
+
+      .day {
+        display: flex;
+        justify-content: center;
+        margin: 0.2em 0;
+        width: 2.3em;
+        padding: 0.5em 0;
+        background-color: white;
+        border: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 0.9rem;
+        background-color: transparent;
+
+        &:hover {
+          background-color: $colour-light-grey;
+        }
+
+        &.selected {
+          background-color: $colour-mid-blue;
+          color: $colour-white;
+        }
+
+        &:focus {
+          z-index: 10;
+        }
+      }
+    }
+  }
+}

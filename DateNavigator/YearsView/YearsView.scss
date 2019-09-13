@@ -1,0 +1,27 @@
+@import '../../style/variables.scss';
+.yearView {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+
+  .yearsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .year{
+      padding: 1em;
+      margin: 0.7em;
+      background-color: $colour-white;
+      border: none;
+      cursor: pointer;
+
+      &.selected {
+        background-color: $colour-mid-blue;
+        border-radius: 4px;
+        color: $colour-white;
+      }
+    }
+  }
+}

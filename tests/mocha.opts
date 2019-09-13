@@ -1,0 +1,2 @@
+--reporter progress
+--require ./tests/testSetup.js
