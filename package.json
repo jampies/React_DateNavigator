@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook",
-    "test": "mocha --opts ./tests/mocha.opts \"./**/*.spec.js\""
+    "test": "mocha --opts ./tests/mocha.opts \"./**/*.spec.js\"",
+    "deploy": "now --token=$NOW_TOKEN --public && now --token=$NOW_TOKEN alias"
   },
   "repository": {
     "type": "git",

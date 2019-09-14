@@ -16,10 +16,10 @@ A date selector component that highlights the selected week built with React
 
 ### API
 
-* `date` - The currently selected date
-* `onChange` - Called with the new date when one is selected
-* `minimumDate` - Earliest selectable date. Defaults to beginning of the previous year.
-* `maximumDate` - Latest selectable date. Defaults to end of 3 years from current date.
+* `date` - Optional. The currently selected date. Defaults to today.
+* `onChange` - Required. Called with the new date when one is selected
+* `minimumDate` - Optional. Earliest selectable date. Defaults to beginning of the previous year.
+* `maximumDate` - Optional. Latest selectable date. Defaults to end of 3 years from current date.
 
 ### Example
 
