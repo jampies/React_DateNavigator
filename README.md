@@ -1,6 +1,6 @@
 # React_DateNavigator
 
-A date selector component built with React
+A date selector component that highlights the selected week built with React
 
 ## Dependencies
 
@@ -13,6 +13,15 @@ A date selector component built with React
 * `npm test` runs the unit tests
 
 ## Usage
+
+### API
+
+* `date` - The currently selected date
+* `onChange` - Called with the new date when one is selected
+* `minimumDate` - Earliest selectable date. Defaults to beginning of the previous year.
+* `maximumDate` - Latest selectable date. Defaults to end of 3 years from current date.
+
+### Example
 
 ```
 class DateNavigatorStoryWrapper extends React.Component {
