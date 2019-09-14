@@ -1,10 +1,9 @@
 import React from 'react';
 import { map } from 'lodash';
 import styles from './MonthsView.scss';
-import { dateFromMonth } from '../utils';
 import classnames from 'classnames';
 import dateService from '../../helpers/dateFns/dateFns';
-const { isSameMonth } = dateService;
+const { isSameMonth, dateFromMonth } = dateService;
 
 const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 

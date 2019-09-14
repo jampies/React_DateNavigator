@@ -1,7 +1,7 @@
 import { configure } from '@storybook/react';
 
 function loadStories() {
-    require('../DateNavigator/DateNavigator.story');
+    require('../components/DateNavigator/DateNavigator.story');
 }
 
 configure(loadStories, module);

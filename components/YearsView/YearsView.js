@@ -2,9 +2,8 @@ import React from 'react';
 import styles from './YearsView.scss';
 import { map } from 'lodash';
 import classnames from 'classnames';
-import { dateFromYear } from '../utils';
 import dateService from '../../helpers/dateFns/dateFns';
-const { getYear, isSameYear } = dateService;
+const { getYear, isSameYear, dateFromYear } = dateService;
 
 export const isSelected = (currentDate, year) => isSameYear(currentDate, dateFromYear(year));
 

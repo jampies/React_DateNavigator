@@ -2,9 +2,8 @@ import React from 'react';
 import styles from './DaysView.scss';
 import { WEEKDAYS_ABBR } from '../../config/constants';
 import { map, some } from 'lodash';
-import { getWeeksInMonth, dateFromMonth } from '../utils';
 import dateService from '../../helpers/dateFns/dateFns';
-const { format } = dateService;
+const { format, getWeeksInMonth, dateFromMonth } = dateService;
 
 const Day = ({ day, onChange }) => {
   if (day) {

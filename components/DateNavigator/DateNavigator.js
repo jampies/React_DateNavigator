@@ -1,15 +1,14 @@
 import React from 'react';
 import styles from './DateNavigator.scss';
-import DaysSelector from './DaysSelector/DaysSelector';
-import DaysView from './DaysView/DaysView';
-import MonthsView from './MonthsView/MonthsView';
-import YearsView from './YearsView/YearsView';
+import DaysSelector from '../DaysSelector/DaysSelector';
+import DaysView from '../DaysView/DaysView';
+import MonthsView from '../MonthsView/MonthsView';
+import YearsView from '../YearsView/YearsView';
 import { noop } from 'lodash';
 import classnames from 'classnames';
-import { dateFromMonth } from './utils';
-import dateService from '../helpers/dateFns/dateFns';
-import { DATE_NAVIGATOR_VIEWS } from '../config/constants';
-const { addDays, addMonths, addYears, startOfDay, getMinimumDate, getMaximumDate, getNewDate, getCurrentDate, getMonth, getYear, isBetweenDays, addWeeks, format, getDayOfWeek, getStartOfWeek } = dateService;
+import dateService from '../../helpers/dateFns/dateFns';
+import { DATE_NAVIGATOR_VIEWS } from '../../config/constants';
+const { dateFromMonth, addDays, addMonths, addYears, startOfDay, getMinimumDate, getMaximumDate, getNewDate, getCurrentDate, getMonth, getYear, isBetweenDays, addWeeks, format, getDayOfWeek, getStartOfWeek } = dateService;
 
 export const DIRECTION = {
   BACK: -1,
