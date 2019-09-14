@@ -8,5 +8,4 @@ node_modules/
 .vscode
 
 # production
-/dist
-
+/storybook-static

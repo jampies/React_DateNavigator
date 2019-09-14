@@ -2,13 +2,6 @@
     "name": "date-navigator",
     "alias": "date-navigator",
     "files": [
-        "components",
-        ".storybook",
-        "config",
-        "helpers",
-        "style",
-        "package.json",
-        "package-lock.json",
-        ".babelrc"
+        "storybook-static"
     ]
 }
