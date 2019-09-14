@@ -1,6 +1,6 @@
 {
   "name": "date-navigator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A React component used for selecting a date in any time span",
   "main": "index.js",
   "scripts": {

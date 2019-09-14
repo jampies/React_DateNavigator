@@ -16,7 +16,7 @@ NPM Package: https://www.npmjs.com/package/date-navigator
 * `npm start` will start up storybook locally to demo the component
 * `npm test` runs the unit tests
 
-Any push to github will trigger a Travis build, which will update the npm package and deploy the latest version to now here: https://www.npmjs.com/package/date-navigator
+Any push to github will trigger a Travis build, which will update the npm package and deploy the latest version to now here: https://reactdatenavigator.murrayleroux.now.sh
 
 ## Usage
 
