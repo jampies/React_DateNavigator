@@ -8,7 +8,8 @@ describe('date fns', () => {
 
   beforeEach(() => {
     mockDate = td.replace('./dateWrapper').default;
-    td.when(mockDate(), { ignoreExtraArgs: true }).thenReturn(new Date(2018, 7, 21));
+    td.when(mockDate()).thenReturn(new Date(2018, 7, 21));
+    td.when(mockDate(td.matchers.anything(), td.matchers.anything(), td.matchers.anything())).thenDo((year, month, day) => new Date(year, month, day));
     const dateimport = require('./dateFns').default;
     getDayOfWeek = dateimport.getDayOfWeek;
     getEndOfWeek = dateimport.getEndOfWeek;

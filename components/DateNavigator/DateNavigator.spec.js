@@ -1,15 +1,15 @@
 import assert from 'assert';
 import React from 'react';
 import { shallow } from 'enzyme';
-import { DATE_NAVIGATOR_VIEWS } from '../config/constants';
+import { DATE_NAVIGATOR_VIEWS } from '../../config/constants';
 import td from 'testdouble';
 import styles from './DateNavigator.scss';
-import DaysSelector from './DaysSelector/DaysSelector';
-import DaysView from './DaysView/DaysView';
-import MonthsView from './MonthsView/MonthsView';
-import YearsView from './YearsView/YearsView';
-import dateService from '../helpers/dateFns/dateFns';
-const { getNewDate, isSameDay } = dateService;
+import DaysSelector from '../DaysSelector/DaysSelector';
+import DaysView from '../DaysView/DaysView';
+import MonthsView from '../MonthsView/MonthsView';
+import YearsView from '../YearsView/YearsView';
+import dateService from '../../helpers/dateFns/dateFns';
+const { isSameDay } = dateService;
 
 describe('DateNavigator', () => {
   let component;
@@ -24,7 +24,7 @@ describe('DateNavigator', () => {
   beforeEach(() => {
     fakeOnChange = td.function('fakeOnChange');
     defaultCurrentDate = new Date('2018-08-24');
-    let fakeDate = td.replace('../helpers/dateFns/dateFns', {
+    let fakeDate = td.replace('../../helpers/dateFns/dateFns', {
       ...dateService,
       getCurrentDate: td.func('getCurrentDate'),
       getMinimumDate: td.func('getMinimumDate'),

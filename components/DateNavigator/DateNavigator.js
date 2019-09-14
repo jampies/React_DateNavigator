@@ -8,7 +8,24 @@ import { noop } from 'lodash';
 import classnames from 'classnames';
 import dateService from '../../helpers/dateFns/dateFns';
 import { DATE_NAVIGATOR_VIEWS } from '../../config/constants';
-const { dateFromMonth, addDays, addMonths, addYears, startOfDay, getMinimumDate, getMaximumDate, getNewDate, getCurrentDate, getMonth, getYear, isBetweenDays, addWeeks, format, getDayOfWeek, getStartOfWeek } = dateService;
+const { 
+  dateFromMonth, 
+  addDays, 
+  addMonths, 
+  addYears, 
+  startOfDay, 
+  getMinimumDate, 
+  getMaximumDate, 
+  getNewDate, 
+  getCurrentDate, 
+  getMonth, 
+  getYear, 
+  isBetweenDays, 
+  addWeeks, 
+  format, 
+  getDayOfWeek, 
+  getStartOfWeek 
+} = dateService;
 
 export const DIRECTION = {
   BACK: -1,
@@ -97,8 +114,8 @@ export class DateNavigator extends React.Component {
     this.closeNavigator = this.closeNavigator.bind(this);
     this.setNavigatorRef = this.setNavigatorRef.bind(this);
 
-    this.minDate = getMinimumDate();
-    this.maxDate = getMaximumDate();
+    this.minDate = props.minimumDate || getMinimumDate();
+    this.maxDate = props.maximumDate || getMaximumDate();
 
     if (!props.date) {
       this.selectDate(startOfDay(getCurrentDate()));
