@@ -1,6 +1,9 @@
 # React_DateNavigator
 
-A date selector component that highlights the selected week built with React
+A date selector component that highlights the selected week built with React.
+
+Example available here: https://reactdatenavigator.murrayleroux.now.sh
+NPM Package: https://www.npmjs.com/package/date-navigator
 
 ## Dependencies
 
@@ -12,7 +15,11 @@ A date selector component that highlights the selected week built with React
 * `npm start` will start up storybook locally to demo the component
 * `npm test` runs the unit tests
 
+Any push to github will trigger a Travis build, which will update the npm package and deploy the latest version to now here: https://www.npmjs.com/package/date-navigator
+
 ## Usage
+
+Install using `npm i date-navigator`
 
 ### API
 
@@ -24,6 +31,8 @@ A date selector component that highlights the selected week built with React
 ### Example
 
 ```
+import DateNavigator from 'date-navigator'
+
 class DateNavigatorStoryWrapper extends React.Component {
   constructor () {
     super();
