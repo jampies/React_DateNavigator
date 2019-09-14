@@ -1,0 +1,12 @@
+# node.js
+#
+node_modules/
+
+
+# User-specific files
+*.orig
+.vscode
+
+# production
+/dist
+
