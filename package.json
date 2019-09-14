@@ -1,12 +1,13 @@
 {
   "name": "date-navigator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component used for selecting a date in any time span",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook",
     "test": "mocha --opts ./tests/mocha.opts \"./**/*.spec.js\"",
-    "deploy": "now --token=$NOW_TOKEN --public && now --token=$NOW_TOKEN alias"
+    "deploy": "now --token=$NOW_TOKEN --public && now --token=$NOW_TOKEN alias",
+    "build": "npm build"
   },
   "repository": {
     "type": "git",
