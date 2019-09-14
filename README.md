@@ -3,6 +3,7 @@
 A date selector component that highlights the selected week built with React.
 
 Example available here: https://reactdatenavigator.murrayleroux.now.sh
+
 NPM Package: https://www.npmjs.com/package/date-navigator
 
 ## Dependencies
