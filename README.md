@@ -1,4 +1,4 @@
-# React_DateNavigator
+# Date Navigator ![](https://travis-ci.org/jampies/React_DateNavigator.svg?branch=master)
 
 A date selector component that highlights the selected week built with React.
 
