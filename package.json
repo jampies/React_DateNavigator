@@ -21,7 +21,7 @@
   "homepage": "https://github.com/jampies/React_DateNavigator#readme",
   "devDependencies": {
     "@babel/core": "^7.6.0",
-    "@storybook/react": "^5.1.11",
+    "@storybook/react": "^7.0.9",
     "assert": "^2.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
